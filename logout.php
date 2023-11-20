@@ -1,0 +1,9 @@
+<?php
+session_start(); 
+session_unset();
+unset($_SESSION['SESSION_ID']);
+unset($_SESSION['USER_NAME']);
+unset($_SESSION['FULL_NAME']);
+session_destroy();
+header('Location:sign-in.php');
+?>
